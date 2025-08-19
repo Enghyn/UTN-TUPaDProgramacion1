@@ -1,7 +1,9 @@
-## Programacion_1
+# Programación 1
 
-Tecnicatura en Programación UTN
+**Tecnicatura en Programación UTN**
 
-Estudiante: Enzo Giaquinta
+# Estudiante
 
-Comisión: 4
+**Nombre:** Enzo Giaquinta
+
+**Comisión:** 4 (1 prog 4)
