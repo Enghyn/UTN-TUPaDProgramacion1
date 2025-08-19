@@ -1,4 +1,7 @@
-# Programacion_1
+## Programacion_1
+
 Tecnicatura en Programación UTN
+
 Estudiante: Enzo Giaquinta
+
 Comisión: 4
