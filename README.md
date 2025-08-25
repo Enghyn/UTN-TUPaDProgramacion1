@@ -2,7 +2,7 @@
 
 **Tecnicatura en Programación UTN**
 
-**Docentes:** Cinthia Rigoni, Ramiro Hualpa
+**Docentes:** Cinthia Rigoni
 
 # Estudiante
 
