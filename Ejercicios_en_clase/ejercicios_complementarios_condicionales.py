@@ -6,7 +6,7 @@ if "," not in datos_fecha or "/" not in datos_fecha:
 
 else:
     dia, datos_int = datos_fecha.split(",")
-    DD, MM = map(int, datos_int.split("/"))
+    DD, MM = map(int, datos_int.strip().split("/"))
 
 #Verificación de fecha válida
 if dia != "lunes" and dia != "martes" and dia != "miercoles" and dia != "jueves" and dia != "viernes":
