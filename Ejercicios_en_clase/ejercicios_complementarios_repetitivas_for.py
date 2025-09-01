@@ -2,7 +2,7 @@ letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 
 corrimiento = int(input("Ingrese la cantidad de lugares que correr: "))
 for contador in range(0,6):
-    mensaje = input("Ingrese un mensaje en mayúsculas: ").upper()
+    mensaje = input("Ingrese un mensaje: ").upper()
     mensaje_cifrado = ""
     
     for letra in mensaje:
