@@ -1,11 +1,12 @@
 import random
 
-numeros_unicos = random.sample(range(1, 51), 25)
+numeros_carton = random.sample(range(1, 51), 25)
+elección_numeros_aleatorios = random.sample(range(1, 51), 25)
 
 filas = 5
 columnas = 5
 
-carton = [[numeros_unicos.pop() for _ in range(columnas)] for _ in range(filas)]
+carton = [[numeros_carton.pop() for _ in range(columnas)] for _ in range(filas)]
 
 print("Cartón de bingo:")
 for fila in carton:
@@ -19,8 +20,8 @@ for fila in carton:
 termino = False # Variable para controlar el fin del juego
 index_filas = [] # Lista para almacenar los índices de las filas completadas
 
-while not termino:
-    numero_bingo = random.randint(1, 51)
+while not termino and len(elección_numeros_aleatorios) > 0:
+    numero_bingo = elección_numeros_aleatorios.pop()
     termino = True
     elemento_en_fila = False
     contador = 0 # Contador para identificar la fila
@@ -44,6 +45,11 @@ while not termino:
                 print(numero, end=" ")
         print()
 
-for fila in sorted(index_filas):
-    if fila is not 0:
-        print(f"¡Fila! La fila {fila} ha sido completada.")
+    for fila in sorted(index_filas):
+        if fila is not 0:
+            print(f"¡Fila! La fila {fila} ha sido completada.")
+
+if not termino:
+    print("\nSe han agotado los números aleatorios. Fin del juego.")
+else:
+    print("\n¡Bingo! Has completado el cartón.")
