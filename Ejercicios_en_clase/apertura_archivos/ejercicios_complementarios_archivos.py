@@ -1,6 +1,6 @@
 import csv
 
-RUTA = "archivo.csv"
+RUTA = "./Ejercicios_en_clase/apertura_archivos/archivo.csv"
 
 def esta_vacio():
     import os
