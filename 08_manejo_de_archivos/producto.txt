@@ -1,0 +1,6 @@
+Manzanas,320.50,12
+Bananas,250.00,8
+Leche Entera,980.75,6
+Huevos,2100.00,2
+Manteca,1450.70,2
+Shampoo,4200.00,1

@@ -8,7 +8,8 @@ lista_productos = []
 
 def mostrar_productos():
     with open(RUTA_ARCHIVO, "r", encoding="utf-8", newline="") as archivo:
-        for linea in archivo:
+        lineas = archivo.readlines()
+        for linea in lineas:
             nombre_producto, precio_producto, cantidad_producto = linea.strip().split(",")
             print(f"Producto: {nombre_producto} | Precio: {precio_producto} | Cantidad: {cantidad_producto}")
             lista_productos.append({"nombre": precio_producto, "precio": float(precio_producto), "cantidad": int(cantidad_producto)})
@@ -22,7 +23,8 @@ def agregar_producto(nombre_producto:str, precio_producto:float, cantidad_produc
 
 def buscar_producto(nombre_producto:str):
     with open(RUTA_ARCHIVO, "r", encoding="utf-8", newline="") as archivo:
-        for linea in archivo:
+        lineas = archivo.readlines()
+        for linea in lineas:
             nombre, precio, cantidad = linea.strip().split(",")
             if nombre == nombre_producto:
                 return (nombre, precio, cantidad)
